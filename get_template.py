@@ -26,4 +26,9 @@ if m_resp.status_code == requests.codes.ok:
     # print(m_resp.content)  # for non text-requests, binary response
     # print(m_resp.json())
 
+
+else:
+    print("Sorry something went wrong...")
+    print("Status code: " + str(m_resp.status_code))
+
 print("Done, exiting now ...")
